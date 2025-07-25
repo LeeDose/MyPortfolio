@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leenard Medrano</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet" />
+    <style>
+        #TitleName {
+            text-align: center;
+            font-size: 3em;
+            font-family: "Playfair Display", serif;
+        }
+
+        #firstCard {
+            margin-top: 20px;
+        }
+    </style>
+    <script>document.addEventListener('DOMContentLoaded', (event) => {
+            const htmlElement = document.documentElement;
+            const switchElement = document.getElementById('darkModeSwitch');
+
+            // Set the default theme to dark if no setting is found in local storage
+            const currentTheme = localStorage.getItem('bsTheme') || 'dark';
+            htmlElement.setAttribute('data-bs-theme', currentTheme);
+            switchElement.checked = currentTheme === 'dark';
+
+            switchElement.addEventListener('change', function () {
+                if (this.checked) {
+                    htmlElement.setAttribute('data-bs-theme', 'dark');
+                    localStorage.setItem('bsTheme', 'dark');
+                } else {
+                    htmlElement.setAttribute('data-bs-theme', 'light');
+                    localStorage.setItem('bsTheme', 'light');
+                }
+            });
+        });</script>
+</head>
+
+<body >
+    <div class="container">
+        <header class="border-bottom lh-1 py-3">
+            <div class="row">
+                <div id="TitleName" class="col-12">
+                    <a class="blog-header-logo text-body-emphasis text-decoration-none" href="#">My Portfolio</a>
+                </div>
+            </div>
+    </div>
+    </header>
+    </div>
+    <main id="firstCard" class="container">
+        <div class="row p-4 p-md-5 mb-4 rounded text-body-emphasis bg-body-secondary">
+            <div class="col-lg-6 col-md-6 col-sm-12 d-flex align-items-center">
+                <div>
+                    <h1 class="display-4 fst-italic">Objectives</h1>
+                    <p class="lead my-3">
+                        Seeking for a position that will help me grow as an individual and
+                        to have a good start of my career path. To give opportunity to
+                        practice my profession of becoming a full-stack web developer or as
+                        and IT specialist.
+                    </p>
+                    <p class="lead mb-0">
+                        <a href="#" class="text-body-emphasis fw-bold">Leenard Medrano</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6 text-center">
+               <img src="./images/CroppedCorpo.png" class="img-fluid rounded shadow w-75 w-md-50 w-lg-50" alt="Leenard Medrano">
+
+            </div>
+        </div>
+        <div class="row mb-2">
+            <div class="col-md-6">
+                <div
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-primary-emphasis">Projects</strong>
+                        <h3 class="mb-0">MarkadongPinoy.com</h3>
+                        <div class="mb-1 text-body-secondary">2024-2025</div>
+                        <p class="card-text mb-auto">
+                            A website equipped CMS features to aid small business towards their marketing efforts.
+                        </p>
+                        <!-- 
+<a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+    View More
+    <svg class="bi" aria-hidden="true">
+        <use xlink:href="#chevron-right"></use>
+    </svg>
+</a>
+-->
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-success-emphasis">Education</strong>
+                        <h3 class="mb-0">BS in Information Technology</h3>
+                        <div class="mb-1 text-body-secondary">2021-2025</br></div>
+                        <p class="mb-auto">
+                            Specializing in Web-development, Networking, and Cybersecurity.
+                        </p>
+                        <!-- 
+<a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+    View More
+    <svg class="bi" aria-hidden="true">
+        <use xlink:href="#chevron-right"></use>
+    </svg>
+</a>
+-->
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row g-5">
+            <div class="col-md-8">
+                <h3 class="pb-2 mb-3 fst-italic border-bottom">Experience</h3>
+                <article class="blog-post">
+                    <h2 class="display-6 link-body-emphasis mb-1">IT Cloud Associate Intern</h2>
+                    <p class="blog-post-meta">
+                        Febuary - May 2025 | <a href="https://www.macrologic.com.ph/">Macrologic Diversified
+                            Technologies, Inc. – Cavite Main Branch</a>
+                    </p>
+
+                    <hr />
+                    <div style="text-align: justify;">
+                        <ul>
+                            <li>Revised company templates and privacy policies to maintain up-to
+                                date records.</li>
+                            <li>Acquired certifications and applied principles during downtime,
+                                including Fortinet FCA.</li>
+                            <li>Learned FortiGate setup and management, including access controls,
+                                bandwidth limiting, and website authorization.</li>
+                            <li>Organized network cables, monitored Datacenter, UPS, MMR, and Telco
+                                Room, and performed ping tests for CCTV systems.</li>
+                            <li>Installed Windows OS, performed laptop quality checks, and participated
+                                in system enablement meetings.</li>
+                            <li>Designed CCTV layouts and implemented surveillance systems using
+                                Axxon and Dahua software providing multi-tenancy solutions.</li>
+                            <li>Validated log monitoring forms for yearly audits and documented
+                                technical service reports.</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <h3 class="pb-2 mb-3 fst-italic border-bottom">Trainings and Seminar</h3>
+                <article class="blog-post">
+
+                    <h2 class="display-6 link-body-emphasis mb-1">Cybersecurity Awareness
+                    </h2>
+                    <p class="blog-post-meta">
+                        2024 from <a href="https://www.facebook.com/share/p/15gfDEJTte/">LPU Cavite
+                        </a>
+                    </p>
+                    <p>The Cybersecurity Awareness Seminar empowered participants with practical strategies for digital
+                        safety, featuring insights from expert speaker Ms. Desha Sabordo. Organized by the Center for
+                        Information Technology and Digital Learning, the event highlighted the importance of secure
+                        online environments and digital literacy.</p>
+                    <h2 class="display-6 link-body-emphasis mb-1">Innovex 2025
+                    </h2>
+                    <p class="blog-post-meta">
+                        2025 from <a href="https://www.facebook.com/share/v/16uz7smeQi/">LPU Cavite
+                        </a>
+                    </p>
+                    <p>Innovex 2025 at LPU Cavite was a dynamic showcase of student-led innovation, featuring projects
+                        that tackled real-world challenges through technology, sustainability, and creative
+                        problem-solving. The event fostered collaboration across disciplines and celebrated the
+                        ingenuity of future changemakers within the Lycean community.</p>
+                    <h2 class="display-6 link-body-emphasis mb-1">The Complete Full-Stack Web Development Bootcamp
+                    </h2>
+                    <p class="blog-post-meta">
+                        2025 from <a
+                            href="https://www.bing.com/ck/a?!&&p=0968831af879b267bc055523809418c6f4bf4b18fc7572d2a0bb3023ff3a1f3eJmltdHM9MTc1MzQwMTYwMA&ptn=3&ver=2&hsh=4&fclid=05557c97-739a-6de4-3597-696572076c87&psq=udemy+full+stack+developer&u=a1aHR0cHM6Ly93d3cudWRlbXkuY29tL3RvcGljL2Z1bGwtc3RhY2std2ViLWRldmVsb3BtZW50Lw&ntb=1">Udemy
+                        </a>
+                    </p>
+                    <p>The Complete Full-Stack Web Development Bootcamp on Udemy, led by Dr. Angela Yu, is a top-rated
+                        course that teaches everything from HTML and CSS to React, Node, and Web3 technologies. With
+                        hands-on projects and over 60 hours of content, it's designed to take learners from beginner to
+                        job-ready developer.
+                    </p>
+                </article>
+            </div>
+
+            <div class="col-md-4">
+                <div class="position-sticky" style="top: 2rem">
+                    <div class="p-4 mb-3 bg-body-tertiary rounded">
+                        <h4 class="fst-italic">Contact Information</h4>
+                        <p class="mb-0">
+                            +63 908 775 1120<br />
+                            Medranolee24@gmail.com<br />
+                            Dasma Cavite
+                        </p>
+                    </div>
+                    <div>
+                        <h4 class="fst-italic">Certifcations</h4>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top"
+                                    href="https://www.credly.com/users/leenard-medrano">
+
+                                    <img src="./images/Cisco.png" alt="CCNA Badge" height="96" width="96"
+                                        class="bd-placeholder-img">
+
+                                    <div class="col-lg-8">
+                                        <h6 class="mb-0">CCNA: Intro to Networking</h6>
+                                        <small class="text-body-secondary">Cisco Academy | 2024</small>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top"
+                                    href="https://www.credly.com/users/leenard-medrano">
+                                    <img src="./images/Sap.png" alt="SAP Business One Badge" height="96" width="96"
+                                        class="bd-placeholder-img">
+                                    <div class="col-lg-8">
+                                        <h6 class="mb-0">SAP Business One</h6>
+                                        <small class="text-body-secondary">FIT Academy | 2023</small>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top"
+                                    href="https://www.credly.com/users/leenard-medrano">
+                                    <img src="./images/CertFortiCyber.png" alt="Fortinet Cybersecurity Associate Badge"
+                                        height="96" width="96" class="bd-placeholder-img">
+                                    <div class="col-lg-8">
+                                        <h6 class="mb-0">
+                                            Certified Cybersecurity Associate
+                                        </h6>
+                                        <small class="text-body-secondary">Fortinet | 2025</small>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top"
+                                    href="https://www.credly.com/users/leenard-medrano">
+                                    <img src="./images/FundaForti.png" alt="Cybersecurity Fundamentals Badge"
+                                        height="96" width="96" class="bd-placeholder-img">
+                                    <div class="col-lg-8">
+                                        <h6 class="mb-0">
+                                            Fundamentals of Cybersecurity
+                                        </h6>
+                                        <small class="text-body-secondary">Fortinet | 2025</small>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="p-4">
+                        <h4 class="fst-italic">Socials</h4>
+                        <ol class="list-unstyled">
+                            <li><a href="https://github.com/LeeDose">GitHub</a></li>
+                            <li><a
+                                    href="https://www.instagram.com/leenardmedrano?igsh=eXZqcngzajA2N3Jp&utm_source=qr">Instagram</a>
+                            </li>
+                            <li><a href="https://www.facebook.com/leenard.medrano.2025">Facebook</a></li>
+                            <li><a href="https://www.linkedin.com/in/leenard-medrano-769189241">Linked in</a></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
